@@ -11,4 +11,11 @@ class CTest {
         C sample = new C(42);
         assertEquals(42, sample.result());
     }
+
+    @Test
+    void numberOfAs() {
+        C sample = new C();
+        int r = sample.numberOfAs("Apples are apples");
+        assertEquals(3, r);
+    }
 }
